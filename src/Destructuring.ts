@@ -9,5 +9,5 @@ const user = {
   favouriteColor: "black",
 };
 
-const { favouriteColor: myfavouriteColor } = user;
+const { favouriteColor: myfavouriteColor, name: {middleName} } = user;
 console.log(myfavouriteColor);
