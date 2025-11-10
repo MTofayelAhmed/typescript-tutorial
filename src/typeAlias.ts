@@ -28,3 +28,8 @@ const user1: User = {
     city: "ctg",
   },
 };
+
+
+
+type Func = (num1: number, num2: number)=> number
+const add : Func=(num1, num2)=> num1+ num2
