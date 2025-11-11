@@ -16,3 +16,23 @@ console.log(biyerJonnoEligible(23));
 
 const themeColor = undefined ;
 const mainThemeColor = themeColor ?? "this color is selected"
+console.log(mainThemeColor)
+
+
+// optional chaining
+
+const user: {
+address: {
+   city: string;
+   town: string;
+   postalCode?:number   
+}
+} =  {
+    address: {
+        city: "Dhaka",
+        town: "ctg",
+        
+    }
+}
+
+ const info =     user?.address?.postalCode
