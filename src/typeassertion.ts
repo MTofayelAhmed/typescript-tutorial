@@ -17,3 +17,13 @@ const result2 = kgToGramConvertor("2 kg")
 console.log({result2})
 
 // when we can oversure  and we can able to narrowDown type we can use typeAssertion
+
+type CustomError = {
+    message: string ;
+
+}
+try {
+
+}catch (err){
+    console.log((err as CustomError).message)
+}
