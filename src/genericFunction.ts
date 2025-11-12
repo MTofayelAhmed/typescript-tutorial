@@ -34,3 +34,28 @@ const createArrayTupleWithGeneric =<X, Y> (param1: X, param2: Y)=> {
 }
 
 const res1 = createArrayTupleWithGeneric("stong", true)
+
+
+const addStudentToCourse = <T>(studentInfo: T)=> {
+    return {
+        course: "Next Level",
+        ...studentInfo
+
+    }
+}
+
+const student1 = {
+    id: 123, 
+    name: "Mezba",
+    hasPen: true,
+}
+
+const student2= {
+    id: 123, 
+    name: "Mezba",
+    hasPen: true,
+    isMarried: true,
+    salary: 34
+}
+const result1= addStudentToCourse(student1)
+const result2= addStudentToCourse(student2)
