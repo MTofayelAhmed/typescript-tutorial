@@ -18,6 +18,14 @@ type ProductWithEverything = Required<Product>
 
 type OptionalProduct = Partial <Product>
 
+// if we need to declare empty object we can use Record to determine the key type 
+
+
+const emptyObj : Record<string, unknown> = {
+    
+}
+
+
 
 
  
