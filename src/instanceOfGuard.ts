@@ -27,9 +27,19 @@ class Teacher extends Person {
 }
 
 const getUserInfo = (user: Person){
-    if(user)
+  if(user instanceof Student){
+    user.getStudy(10)
+  }
+  else if (user instanceof Teacher){
+    user.takeClass(5)
+  }
+  else {
+    user.getSleep(10)
+  }
 }
 
 const student1 = new Student("Mr. Student")
 const teacher1 = new Teacher ("Mr. Teacher")
 
+
+getUserInfo(student1)
