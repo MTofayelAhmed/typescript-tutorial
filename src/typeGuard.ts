@@ -47,7 +47,7 @@ type AdminUser = {
 
 const getUserInfo = (user: NormalUser | AdminUser) => {
   if ("role" in user) {
-    console.log(`${user.name} and his rolwe is : ${user.role}`);
+    console.log(`${user.name} and his role is : ${user.role}`);
   } else {
     console.log(` ${user.name}`);
   }
