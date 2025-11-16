@@ -26,11 +26,25 @@ class Teacher extends Person {
     }
 }
 
+
+
+// function Guard 
+
+
+
+const isStudent = (user: Person)=> {
+    return user instanceof Student 
+}
+
+const isTeacher = (user: Person)=> {
+    return user instanceof Teacher
+}
+
 const getUserInfo = (user: Person){
-  if(user instanceof Student){
+  if(isStudent(user)){
     user.getStudy(10)
   }
-  else if (user instanceof Teacher){
+  else if (isTeacher(user)){
     user.takeClass(5)
   }
   else {
@@ -43,3 +57,6 @@ const teacher1 = new Teacher ("Mr. Teacher")
 
 
 getUserInfo(student1)
+
+
+
